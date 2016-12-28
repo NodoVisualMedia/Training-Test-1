@@ -1,0 +1,20 @@
+section{
+	border : 1px solid black;
+
+	margin: 30px;
+}
+
+h2{
+	margin-right: 20px;
+	float: right;
+}
+
+.contenedor{
+	
+	width: 35%;
+	margin: 8% auto;
+}
+
+p{
+	padding: 2px;
+}

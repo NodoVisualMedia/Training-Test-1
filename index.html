@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Test 1</title>
+	<title>test_1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<h1>¡Muchos Exitos!</h1>
+
+	<section id="seccion1">
+		<h2>seccion 1</h2>
+			<div class="contenedor">
+			
+				<label >Nombre</label><br><br>
+				<input type="text" id="Nombre" class="form-control"><br><br>
+			
+				<label>Sexo</label><br><br>
+				<select id="Sexo" class="form-control"><br><br>
+					<option>Hombre</option>
+	 				 <option>Mujer</option>
+				</select><br><br><br>
+			
+				<label>Palabra navideña</label><br><br>
+				<input type="text" id="Navidad" class="form-control"><br><br>
+
+				<button id="Send" class="btn btn-success">Enviar</button><br><br>
+
+		</div>
+
+	</section>
+
+	<section id="seccion2">
+
+		<h2>seccion 2</h2>
+
+			<div class="contenedor">
+		
+				<label>Nombre usuario</label><br>
+				<p id="nombre1" class="bg-info"></p><br>
+
+				<label>Sexo usuario</label><br>
+				<p id="sexo1" class="bg-info"></p><br>
+
+				<label>Palabra navideña al revés</label><br>
+				<p id="navidena1" class="bg-info"></p><br><br>
+		</div>
+		
+	</section>
+	<script src="name.js"></script>
 </body>
 </html>
