@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Test 1</title>
+	<meta charset="utf-8"/>
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body>
-	<h1>¡Muchos Exitos!</h1>
+
+	<div class="contenedor">
+
+		<div id="seccion1">
+			<h2 id="titulo1">Sección 1</h2>
+			<form id="form1">
+				<label for="nombre">Nombre</label>
+  					<input type="text" name="nombre" id="nombre" class="formulario" />
+  					<p><label>Sexo</label>
+            <Select id = sexo de "sexo" = "sexo">
+                <Option value = ""> Elige una opcion </option>
+                <Option value = "mujer"> Mujer </option>
+                <Option value = "hombre"> Hombre </option></p>
+            </Select> <br />
+           <label for="palabra">Palabra Navideña</label>
+  					<input type="text" name="navideña" id="navideña" class="formulario" />
+		<input type="button" value="Enviar" onclick="capturar()">
+    
+  					
+
+			</form>
+		</div>
+	
+		<div id="seccion2">
+			<h2 id="titulo2">Sección 2</h2>
+			<form id="form2">
+			<div id="resultado"></div>
+	<script>		
+    function capturar()
+    {
+        var Nombre=document.forms["form1"].elements[0].value;
+
+        var sexo=document.getElementById("sexo").value;
+
+        var palabra=document.getElementsByName("navideña")[0].value;
+        
+ 
+        document.getElementById("resultado").innerHTML=" \
+            Nombre: <center>"+Nombre+"</center><br> \
+            <br>sexo: <center>"+sexo+"</center><br> \
+            <br>Palabra navideña: <center>"+palabra;
+            
+    }
+    </script>
+    <br>
+    <br>
+	
+			</form>
+		</div>
+	</div>
 </body>
 </html>
+
+
+
