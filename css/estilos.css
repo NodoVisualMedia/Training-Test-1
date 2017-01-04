@@ -1,7 +1,11 @@
 #seccion1, #seccion2 {
-	border: 1px solid black;
+	border: 1px solid White;
+	color: #fff;
 	margin: 30px;
 	text-align: right;
+	background-image: url("../img/background.jpg");
+	
+
 }
 
 form {
@@ -18,4 +22,8 @@ label {
 .Nombre {
 	text-align: center;
 
+}
+
+body {
+	background-color: black;
 }

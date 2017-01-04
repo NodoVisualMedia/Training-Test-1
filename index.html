@@ -3,59 +3,59 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Formulario</title>
-	<link rel="stylesheet" href="css/estilos.css"/>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-	<div class="contenedor">
 
+<!--seccion1-->
+
+	<div class="contenedor">
 		<div id="seccion1">
+
 			<h2 id="titulo1">Sección 1</h2>
+
 			<form id="form1">
-				<label for="nombre">Nombre</label>
-  					<input type="text" name="nombre" id="nombre" class="formulario" />
-  					<p><label>Sexo</label>
-            <Select id = sexo de "sexo" = "sexo">
-                <Option value = ""> Elige una opcion </option>
-                <Option value = "masculino"> Masculino </option>
-                <Option value = "femenino"> Femenino </option></p>
-            </Select> <br />
-           <label for="palabra">Palabra Navideña</label>
-  					<input type="text" name="navideña" id="navideña" class="formulario" />
-		<input type="button" value="Enviar" onclick="capturar()">
-    
-  					
+
+				<label>Nombre</label>
+  					<input type="text" id="Nombre"><br><br><br>
+
+  			<label>Sexo</label>
+            <Select id="Sexo"><br><br><br>
+              <Option value = ""> Elige una opcion </option>
+              <Option value = "Masculino"> Masculino </option>
+              <Option value = "Femenino"> Femenino </option>
+            </Select><br><br><br>
+
+        <label>Palabra Navideña</label>
+  					<input type="text" id="Palabra"><br><br><br>
+
+		        <input type="button" id="Send" value="Enviar"><br><br><br>
 
 			</form>
 		</div>
 	
+<!--seccion2-->
+
 		<div id="seccion2">
 			<h2 id="titulo2">Sección 2</h2>
 			<form id="form2">
-			<div id="resultado"></div>
-	<script>		
-    function capturar()
-    {
-        var Nombre=document.forms["form1"].elements[0].value;
 
-        var sexo=document.getElementById("sexo").value;
-
-        var palabra=document.getElementsByName("navideña")[0].value;
-        
+     
+    
+        <label>Nombre:</label><br>
+        <i id="nombres"></i><br><br>
  
-        document.getElementById("resultado").innerHTML=" \
-            Nombre: <center>"+Nombre+"</center><br> \
-            <br>sexo: <center>"+sexo+"</center><br> \
-            <br>Palabra navideña: <center>"+palabra;
-            
-    }
-    </script>
-    <br>
-    <br>
+        <label>Sexo:</label><br>
+        <i id="sexos"></i><br><br>
+ 
+        <label>Palabra navideña:</label><br>
+        <i id="navis"></i><br><br>
+        <br>
+        <br>
 	
 			</form>
-		</div>
-	</div>
+  <script src="invertir.js"></script>
 </body>
 </html>
 
