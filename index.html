@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8"/>
-	<title>Formulario</title>
-	<link rel="stylesheet" href="css/estilos.css">
+  <meta charset="utf-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  
+  <div class="contenedor">
+    <div id="seccion1">
+      
+      <h2 id="titulo1">Sección 1</h2>
 
+      <label for="nombre">Nombre</label><br>
+      <input type="text" id="nombre" placeholder="               Tu Nombre"><br><br>
 
-<!--seccion1-->
+      <label>Sexo</label><br>
+      <select id="sexo"><br>
+        <option value="">Elige una opción</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+      </select><br><br>
 
-	<div class="contenedor">
-		<div id="seccion1">
+      <label for="palabra">Palabra Navideña</label><br>
+      <input type="text" id="navidad" placeholder="          Palabra Navideña"><br><br>
 
-			<h2 id="titulo1">Sección 1</h2>
+     <input type="button" value="Enviar" onclick="llenar()"><br><br><br><br>
 
-			<form id="form1">
+    </div>
+  </div>
 
-				<label>Nombre</label>
-  					<input type="text" id="Nombre"><br><br><br>
+  <div id="seccion2">
 
-  			<label>Sexo</label>
-            <Select id="Sexo"><br><br><br>
-              <Option value = ""> Elige una opcion </option>
-              <Option value = "Masculino"> Masculino </option>
-              <Option value = "Femenino"> Femenino </option>
-            </Select><br><br><br>
+    <h2 id="titulo2">Sección 2</h2>
 
-        <label>Palabra Navideña</label>
-  					<input type="text" id="Palabra"><br><br><br>
-
-		        <input type="button" id="Send" value="Enviar"><br><br><br>
-
-			</form>
-		</div>
-	
-<!--seccion2-->
-
-		<div id="seccion2">
-			<h2 id="titulo2">Sección 2</h2>
-			<form id="form2">
-
-     
-    
-        <label>Nombre:</label><br>
-        <i id="nombres"></i><br><br>
- 
-        <label>Sexo:</label><br>
-        <i id="sexos"></i><br><br>
- 
-        <label>Palabra navideña:</label><br>
-        <i id="navis"></i><br><br>
-        <br>
-        <br>
-	
-			</form>
+    <div id="resultado"></div><br><br>        
+  
+  </div>
   <script src="invertir.js"></script>
 </body>
 </html>
+
 
 
 

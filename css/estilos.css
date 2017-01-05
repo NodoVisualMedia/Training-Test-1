@@ -2,28 +2,28 @@
 	border: 1px solid White;
 	color: #fff;
 	margin: 30px;
-	text-align: right;
-	background-image: url("../img/background.jpg");
+	text-align: center;
+	border-radius: 20px;
+	font-size: 35px;
 	
-
-}
-
-form {
-	text-align: center;
-	font-size: 30px;
-
-}
-
-label {
-  display: block;
-  margin: .5em 0 0 0;
-}
-
-.Nombre {
-	text-align: center;
-
+	background-image: url("../img/background.jpg");
 }
 
 body {
-	background-color: black;
+	background-color: black
+}
+
+#titulo1, #titulo2 {
+	text-align: right;
+	font-size: 35px;
+}
+
+input {
+	border-radius: 35px;
+	font-size: 15px;
+
+}
+
+#Boton {
+	font-size: 50px;
 }
